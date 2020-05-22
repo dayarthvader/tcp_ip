@@ -34,4 +34,3 @@ Details
    |  |--packaging_scripts(debian/rpm etc ..)
    |--scripts
    |  |--automation/installation scripts
-
