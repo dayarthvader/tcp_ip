@@ -4,6 +4,7 @@ Details
 1. cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.
   Do review the source tree once to suite your architecture before forking the repo.  
    project  
+   >subfolder
    |--cpp  
    |****|--src  
    |****|****|--main  
