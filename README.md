@@ -2,15 +2,18 @@
 
 
 ## Skeletal framework for new c++ projects.  
-I wanted to make ready framework for all of my future C++ projects. This repo should serve and hopefully others who'd like to build c++ libraries and applications. I'm of the belief that the following 6 aspects of your future project must be well set right at the onset even before you write your first line of code. 
+I wanted to make a ready framework for all of my future C++ projects. This repo should serve me and hopefully, others who'd like to build c++ libraries and applications well. I'm of the belief that the following 6 aspects of your future project must be well set right at the onset, even before you write your first line of C++ code. 
 
 ## Source tree structure
 I attach a lot of significance to how I structure the source tree. Ideally the source structure should reflect software architecture. Advantages of well desinged source tree structure being :  
 [x] Intuitive code browsing -  
-[x] Predictability - 
-[x] Tranparency - 
-[x] Maintainibility -  
-[x] Automation tools integration -
+[x] Predictability -  
+[x] Tranparency -  
+[x] Maintainibility -    
+[x] Automation tools integration -  
+
+## Build system
+Any software project of a reasonable size and complexity needs a set of tools to manage its lifecycle, through development to delivery. Managing a live codebase has its fair share of complexities. One of the biggest contributors to such complexity is the tendency of the codebase to change. In its purest form, software management is simply change management. There a number of tools in the market today to help us with this change. Change management becomes one of the invaluable aspects of the software project that as a designer one must choose to have and chose the right one. I found CMake to be most widely accepted build system in the C++ fraternity (Atlease in my circle of C++ experts). CMake is still a evolving system aiming to meet many requirements of software management, ranging from build,dependency,test management etc .... I am sure there are many. Choose one for your needs but definitely make it a point to have one.
 
 You can fork this repo to get a headstart in your new C++ projects if you chose  
 [x] Details.1. As your folder structure.
@@ -18,7 +21,7 @@ You can fork this repo to get a headstart in your new C++ projects if you chose
 [x] google-style-guide as your coding style-guide  
 [x] googletest and googlemock as your unit test framework  
 [x] spdlog as logging framework  
-[x] *experimental* statusor as a error handling model -- This is new model I am trying.  
+[x] **experimental** statusor as a error handling model -- This is new model I am trying.  
   
 ## Details
 1. cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.  
