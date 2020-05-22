@@ -7,10 +7,10 @@ Details
   project  
   - cpp  
     - src  
-      - main  
-	  main.cpp
-	  CMakeLists.txt   -->
-	####<lib_1>
+      - main    
+        - main.cpp  
+	- CMakeLists.txt   -->  
+      - <lib_1>
 	  *.cpp
 	  *.h  --> Private headers
 	  CMakeLists.txt
