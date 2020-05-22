@@ -4,19 +4,19 @@ Details
 1. Usual cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.
   Do review the source tree once to suite your architecture before forking the repo.
   # project
-    # cpp
-      # src
-        # main
+    ## cpp
+      ### src
+        #### main
 	  main.cpp
 	  CMakeLists.txt   -->
-	# <lib_1>
-	  # *.cpp
-	  # *.h  --> Private headers
-	  # CMakeLists.txt
-	# <lib_2>
-	  # *.cpp
-	  # *.h
-	  # CMakeLists.txt
+	#### <lib_1>
+	  *.cpp
+	  *.h  --> Private headers
+	  CMakeLists.txt
+	#### <lib_2>
+	  *.cpp
+	  *.h
+	  CMakeLists.txt
       # include
         # <lib_1>
 	  # *.h  --> Public interfaces for clients (libraries/applications)
