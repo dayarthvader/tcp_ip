@@ -17,6 +17,12 @@ Any software project of a reasonable size and complexity needs a set of tools to
 
 ## style-guides
 ![Alt Text](https://media.giphy.com/media/10KIsXhwdoerHW/giphy.gif)  
+C++ has powerful set of features. Like many experts believe it is a swiss army knife. One must carefully deliberate on the subset of tools (read language features) that he/she choses to use. Selecting the right set of features and using them in right combination is matter of expertise. Thankfully for us, many experts in the field have set guidelines for us to adapt and use their wisdom for our advantage. Sticking to a style guide brings you following advantages.  
+[x] Manage code complexity
+[x] Improve readability
+[x] Improve mainatainibility
+[x] Improve overall productivity - developer and reviewers can focus on the logic than styles
+
 You can fork this repo to get a headstart in your new C++ projects if you chose  
 [x] Details.1. As your folder structure.
 [x] CMake as your build support tool.  
