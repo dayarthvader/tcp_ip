@@ -12,29 +12,29 @@ Details
         - CMakeLists.txt   -->  
       - <lib_1>  
         - *.cpp  
-        - *.h  --> Private headers
+        - *.h  --> Private headers  
 	- CMakeLists.txt  
       - <lib_2>
 	  *.cpp
 	  *.h
 	  CMakeLists.txt
-      # include
+      include
         # <lib_1>
 	  # *.h  --> Public interfaces for clients (libraries/applications)
-      # test
-        # *_test.cpp
-	# CMakeLists.txt
-      # cmake
-        # *.cmake --> tools specific configuration and options (sanitizers, conan etc ...)
-      # CMakeLists.txt
-      # .clang-format  --> It's best to make clang-format part of the project as collaborators can easily use it before submitting pull request
-    # third_party
-      # lib_1
-      # lib_2
-      # .
-      # .
-    # package
-      # packaging_scripts(debian/rpm etc ..)
-    # scripts
-      # automation/installation scripts
+      test
+         *_test.cpp
+	 CMakeLists.txt
+      cmake
+        *.cmake --> tools specific configuration and options (sanitizers, conan etc ...)
+      CMakeLists.txt
+      .clang-format  --> It's best to make clang-format part of the project as collaborators can easily use it before submitting pull request
+    third_party
+      lib_1
+      lib_2
+       .
+       .
+    package
+      packaging_scripts(debian/rpm etc ..)
+    scripts
+      automation/installation scripts
 
