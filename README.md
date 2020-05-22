@@ -1,8 +1,16 @@
 # cpp_project_starter  
-Skeletal framework for a new c++ project.  
-Details  
-1. cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.
-  Do review the source tree once to suite your architecture before forking the repo.  
+Skeletal framework for a new c++ projects.
+You can fork this repo to get a headstart in your new C++ projects if you chose
+[x] CMake as your build support tool.
+[x] google-style-guide as your coding style-guide
+[x] googletest and googlemock as your unit test framework
+[x] spdlog as logging framework
+[x] <experimental> statusor as a error handling model -- This is new model I am trying.
+Details
+1. cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.  
+Do review the source tree once to suite your architecture before forking the repo. This is not one structure fits all solution as the ease of usage varies widely based on the language of implementation, domain, architecture etc ...This template may not be suitable for upcoming C++20 based projects as we'd like to move to modules then.
+
+Below is the source tree structure that I am comfortable with.
   ```
 cpp_project_starter/
 ├── cmake # Tools specific configuration (static_analysis tools, dependency management tools)
