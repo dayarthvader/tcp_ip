@@ -25,5 +25,6 @@ cpp_project_starter/
 ├── README.md 
 └── scripts #Automation/startup scripts
 ```
+# Todo
 - [ ] Update .clang-format as per google style guide
 - [ ] Update Main CMakeLists.txt to provide basic skeleton
