@@ -2,13 +2,23 @@
 
 
 ## Skeletal framework for new c++ projects.  
+I wanted to make ready framework for all of my future C++ projects. This repo should serve and hopefully others who'd like to build c++ libraries and applications. I'm of the belief that the following 6 aspects of your future project must be well set right at the onset even before you write your first line of code. 
+
+## Source tree structure
+I attach a lot of significance to how I structure the source tree. Ideally the source structure should reflect software architecture. Advantages of well desinged source tree structure being :  
+[x] Intuitive code browsing -  
+[x] Predictability - 
+[x] Tranparency - 
+[x] Maintainibility -  
+[x] Automation tools integration -
 
 You can fork this repo to get a headstart in your new C++ projects if you chose  
+[x] Details.1. As your folder structure.
 [x] CMake as your build support tool.  
 [x] google-style-guide as your coding style-guide  
 [x] googletest and googlemock as your unit test framework  
 [x] spdlog as logging framework  
-[x] <experimental> statusor as a error handling model -- This is new model I am trying.  
+[x] *experimental* statusor as a error handling model -- This is new model I am trying.  
   
 ## Details
 1. cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.  
