@@ -9,12 +9,12 @@ Details
     - src  
       - main    
         - main.cpp  
-	- CMakeLists.txt   -->  
-      - <lib_1>
-	  *.cpp
-	  *.h  --> Private headers
-	  CMakeLists.txt
-	#### <lib_2>
+        - CMakeLists.txt   -->  
+      - <lib_1>  
+        - *.cpp  
+        - *.h  --> Private headers
+	- CMakeLists.txt  
+      - <lib_2>
 	  *.cpp
 	  *.h
 	  CMakeLists.txt
