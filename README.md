@@ -4,35 +4,24 @@ Details
 1. cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.
   Do review the source tree once to suite your architecture before forking the repo.  
   ```
-   project  
-   >cpp  
-   >>src  
-   >>>main  
-   >>>>main.cpp  
-   >>>>CMakeLists.txt	#build commands for the application  
-   >>>lib_1  
-   >>>>*.cpp  
-   >>>>*.h   # Private headers  
-   >>>>CMakeLists.txt  
-   >>>lib_2  
-   >>>>*.cpp  
-   >>>>*.h  
-   >>>>CMakeLists.txt  
-   >>include  
-   >>>lib_1  
-   >>>>*.h  # Public interfaces for clients (libraries/applications)  
-   >>third_party  
-   >>>lib_1  
-   >>>lib_2  
-   >>test  
-   >>>*_test.cpp  
-   >>>CMakeLists.txt  
-   >cmake  
-   >>*.cmake #tools specific configuration and options (sanitizers, conan etc ...)  
-   >>CMakeLists.txt # Main cmake file for the project  
-   >>.clang-format  # For ease of colloboration  
-   >package  
-   >>packaging_scripts(debian/rpm etc ..)  
-   >scripts  
-   >>automation/installation scripts  
+cpp_project_starter/
+├── cmake # Tools specific configuration (static_analysis tools, dependency management tools)
+│   └── sanitizer.cmake # example
+├── cpp
+│   ├── .clang-format  # Makes sense to make styleguide formatter part of the project of everyone's use
+│   ├── CMakeLists.txt # Main CMake file
+│   ├── include
+│   │   └── cpp_project_starter_lib
+│   │       └── cpp_project_starter.h # Public APIs headers only
+│   ├── src
+│   │   ├── cpp_project_starter_lib # Private header files can go in the same directory
+│   │   │   └── cpp_project_starter.cpp
+│   │   └── main
+│   │       └── main.cpp
+│   ├── test
+│   │   └── cpp_project_starter_test.cpp
+│   └── third_party # Third party libraries (source or binaries)
+├── package # Package scripts for delivery of application (dpkg/rpm etc ...)
+├── README.md 
+└── scripts #Automation/startup scripts
 ```
