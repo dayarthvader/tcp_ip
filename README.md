@@ -8,17 +8,17 @@ Details
    >>src  
    >>>main  
    >>>>main.cpp  
-   >>>>>CMakeLists.txt	#build commands for the application  
-   >>><lib_1>  
+   >>>>CMakeLists.txt	#build commands for the application  
+   >>>lib_1  
    >>>>*.cpp  
    >>>>*.h   # Private headers  
    >>>>CMakeLists.txt  
-   >>><lib_2>  
+   >>>lib_2  
    >>>>*.cpp  
    >>>>*.h  
    >>>>CMakeLists.txt  
    >>include  
-   >>><lib_1>  
+   >>>lib_1  
    >>>>*.h  # Public interfaces for clients (libraries/applications)  
    >>third_party  
    >>>lib_1  
@@ -34,4 +34,3 @@ Details
    >>packaging_scripts(debian/rpm etc ..)  
    >scripts  
    >>automation/installation scripts  
-
