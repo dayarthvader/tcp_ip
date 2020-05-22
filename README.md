@@ -12,8 +12,8 @@ Details
         - CMakeLists.txt   -->  
       - <lib_1>  
         - *.cpp  
-        - *.h  --> Private headers  
-	- CMakeLists.txt  
+        - *.h
+	- CMakeLists.txt
       - <lib_2>
 	  *.cpp
 	  *.h
