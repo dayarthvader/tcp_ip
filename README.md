@@ -81,6 +81,7 @@ cpp_project_starter/
 ├── package # Package scripts for delivery of application (dpkg/rpm etc ...)
 ├── README.md 
 └── scripts #Automation/startup scripts
+
 ```
 # Todo
 - [ ] Compiler options?
