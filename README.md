@@ -60,28 +60,28 @@ You can fork this repo to get a headstart in your new C++ projects if you chose 
 Do review the source tree once to suite your architecture before forking the repo. This is not one structure fits all solutions as the ease of usage varies widely based on the language of implementation, domain, architecture, etc ...This template may not be suitable for upcoming C++20 based projects as we'd like to move to modules then.
 
 Below is the source tree structure that I am comfortable with.
-  ```
+```
 cpp_project_starter/
-├── cmake # Tools specific configuration (static_analysis tools, dependency management tools)
-│   └── sanitizer.cmake # example
+├── cmake
+│   └── sanitizer.cmake
+├── _config.yml
 ├── cpp
-│   ├── .clang-format  # Makes sense to make styleguide formatter part of the project of everyone's use
-│   ├── CMakeLists.txt # Main CMake file
+│   ├── .clang-format
+│   ├── CMakeLists.txt
 │   ├── include
 │   │   └── cpp_project_starter_lib
-│   │       └── cpp_project_starter.h # Public APIs headers only
+│   │       └── cpp_project_starter.h
 │   ├── src
-│   │   ├── cpp_project_starter_lib # Private header files can go in the same directory
+│   │   ├── cpp_project_starter_lib
 │   │   │   └── cpp_project_starter.cpp
 │   │   └── main
-│   │       └── main.cpp
+│   │       └── main.cpp
 │   ├── test
 │   │   └── cpp_project_starter_test.cpp
-│   └── third_party # Third-party libraries (source or binaries)
-├── package # Package scripts for delivery of application (dpkg/rpm etc ...)
-├── README.md 
-└── scripts #Automation/startup scripts
-
+│   └── third_party
+├── package
+├── README.md
+└── scripts
 ```
 # Todo
 - [ ] Compiler options?
