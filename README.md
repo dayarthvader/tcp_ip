@@ -23,6 +23,30 @@ C++ has powerful set of features. Like many experts believe it is a swiss army k
 [x] Improve mainatainibility  
 [x] Improve overall productivity - developer and reviewers can focus on the logic than styles  
 
+## logging framework
+I think we all agree that we need a good logging framework. Using language provided 'print' statements to print all the logs to stdout/stderr is hardly going to help. Loggers are developer/maintainer's best friends. You could make one for yourself if you see fit but there are a lot of the frameworks out there you can chose. Logging is going to impact the software's performance, maintainability and debuggability. Some common characteristics look for in a logger could be:
+[x] performance  
+[x] formatting support  
+[x] appendability   
+[x] support different log levels    
+[x] log rotation support  
+
+## Error handling model
+It may come obvious to many that error handling model should be set up right in the beginning. Unfornaltely for me, there have been some projects in the past where we realise the need to standardise the error handling model in our codebases. The model of error handling is major part of our API design. So it does call for a greater attention while designing our projects. Some of the commong options being:    
+[X] Setting a global error indentifier (errno, perror).  
+[x] Using well defined enum class specifying the error types unambigously.  
+[x] C++ exceptions (World is divided over its use, I am biased for it), asserts.  
+[x] statusor based error handling model, found in most google's C++ projects. I am going to start using it in my personal projects.  
+[x] And never to use bool to indicate success or failure.  
+[x] [nodiscard] or not?.  
+Your chosen style-guide may support or may conflict with the chosen the error handling model, so tune them up accordingly.   
+
+## test-framework
+We all know TDD is great! I wish I could do more TDD than I actually do. I slipup most times and end up regretting not doing TDD while writing tests before feature release. A few C++ testing frameworks I've know in my circle of experts:
+[x] Catch2  
+[x] googletest  
+[x] googlemock
+
 You can fork this repo to get a headstart in your new C++ projects if you chose  
 [x] Details.1. As your folder structure.
 [x] CMake as your build support tool.  
@@ -31,7 +55,7 @@ You can fork this repo to get a headstart in your new C++ projects if you chose
 [x] spdlog as logging framework  
 [x] **experimental** statusor as a error handling model -- This is new model I am trying.  
   
-## Details
+## Source tree
 1. cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.  
 Do review the source tree once to suite your architecture before forking the repo. This is not one structure fits all solution as the ease of usage varies widely based on the language of implementation, domain, architecture etc ...This template may not be suitable for upcoming C++20 based projects as we'd like to move to modules then.
 
@@ -59,5 +83,6 @@ cpp_project_starter/
 └── scripts #Automation/startup scripts
 ```
 # Todo
+- [ ] Compiler options?
 - [ ] Update .clang-format as per google style guide
 - [ ] Update Main CMakeLists.txt to provide basic skeleton
