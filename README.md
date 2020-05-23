@@ -6,11 +6,11 @@ I wanted to make a ready framework for all of my future C++ projects. This repo 
 
 ## Source tree structure
 I attach a lot of significance to how I structure the source tree. Ideally the source structure should reflect software architecture. Advantages of well desinged source tree structure being :  
-[x] Intuitive code browsing -  
-[x] Predictability -  
-[x] Tranparency -  
-[x] Maintainibility -    
-[x] Automation tools integration -  
+* Intuitive code browsing -  
+* Predictability -  
+* Tranparency -  
+* Maintainibility -    
+* Automation tools integration -  
 
 ## Build system
 Any software project of a reasonable size and complexity needs a set of tools to manage its lifecycle, through development to delivery. Managing a live codebase has its fair share of complexities. One of the biggest contributors to such complexity is the tendency of the codebase to change. In its purest form, software management is simply change management. There a number of tools in the market today to help us with this change. Change management becomes one of the invaluable aspects of the software project that as a designer one must choose to have and chosoe the right one. I found CMake to be most widely accepted build system in the C++ fraternity (Atlease in my circle of C++ experts). CMake is still a evolving system aiming to meet many requirements of software management, ranging from build,dependency,test management etc .... I am sure there are many. Choose one for your needs but definitely make it a point to have one.
@@ -18,42 +18,42 @@ Any software project of a reasonable size and complexity needs a set of tools to
 ## style-guides
 ![Alt Text](https://media.giphy.com/media/10KIsXhwdoerHW/giphy.gif)  
 C++ has powerful set of features. Like many experts believe it is a swiss army knife. One must carefully deliberate on the subset of tools (read language features) that he/she choses to use. Selecting the right set of features and using them in right combination is matter of expertise. Thankfully for us, many experts in the field have set guidelines for us to adapt and use their wisdom for our advantage. Sticking to a style guide brings you following advantages.  
-[x] Manage code complexity  
-[x] Improve readability  
-[x] Improve mainatainibility  
-[x] Improve overall productivity - developer and reviewers can focus on the logic than styles  
+* Manage code complexity  
+* Improve readability  
+* Improve mainatainibility  
+* Improve overall productivity - developer and reviewers can focus on the logic than styles  
 
 ## logging framework
 I think we all agree that we need a good logging framework. Using language provided 'print' statements to print all the logs to stdout/stderr is hardly going to help. Loggers are developer/maintainer's best friends. You could make one for yourself if you see fit but there are a lot of the frameworks out there you can chose. Logging is going to impact the software's performance, maintainability and debuggability. Some common characteristics look for in a logger could be:
-[x] performance  
-[x] formatting support  
-[x] appendability   
-[x] support different log levels    
-[x] log rotation support  
+* performance  
+* formatting support  
+* appendability   
+* support different log levels    
+* log rotation support  
 
 ## Error handling model
 It may come obvious to many that error handling model should be set up right in the beginning. Unfornaltely for me, there have been some projects in the past where we realise the need to standardise the error handling model in our codebases. The model of error handling is major part of our API design. So it does call for a greater attention while designing our projects. Some of the commong options being:    
-[X] Setting a global error indentifier (errno, perror).  
-[x] Using well defined enum class specifying the error types unambigously.  
-[x] C++ exceptions (World is divided over its use, I am biased for it), asserts.  
-[x] statusor based error handling model, found in most google's C++ projects. I am going to start using it in my personal projects.  
-[x] And never to use bool to indicate success or failure.  
-[x] [nodiscard] or not?.  
+* Setting a global error indentifier (errno, perror).  
+* Using well defined enum class specifying the error types unambigously.  
+* C++ exceptions (World is divided over its use, I am biased for it), asserts.  
+* statusor based error handling model, found in most google's C++ projects. I am going to start using it in my personal projects.  
+* And never to use bool to indicate success or failure.  
+* [nodiscard] or not?.  
 Your chosen style-guide may support or may conflict with the chosen the error handling model, so tune them up accordingly.   
 
 ## test-framework
 We all know TDD is great! I wish I could do more TDD than I actually do. I slipup most times and end up regretting not doing TDD while writing tests before feature release. A few C++ testing frameworks I've know in my circle of experts:
-[x] Catch2  
-[x] googletest  
-[x] googlemock
+* Catch2  
+* googletest  
+* googlemock
 
 You can fork this repo to get a headstart in your new C++ projects if you chose  
-[x] Details.1. As your folder structure.
-[x] CMake as your build support tool.  
-[x] google-style-guide as your coding style-guide  
-[x] googletest and googlemock as your unit test framework  
-[x] spdlog as logging framework  
-[x] **experimental** statusor as a error handling model -- This is new model I am trying.  
+* Details.1. As your folder structure.
+* CMake as your build support tool.  
+* google-style-guide as your coding style-guide  
+* googletest and googlemock as your unit test framework  
+* spdlog as logging framework  
+* **experimental** statusor as a error handling model -- This is new model I am trying.  
   
 ## Source tree
 1. cpp source tree structure, designed based on my past projects. In principle, my projects are library oriented.  
