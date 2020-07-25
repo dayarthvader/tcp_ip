@@ -3,18 +3,22 @@
 #define CPP_INCLUDE_GRAPH_INTERFACE_H_
 #include <string>
 
-#include "util/tcp_ip_errors.h"
-using util_ns::tcp_ip_errors;
+class Node;
+class Link;
 
 namespace graph_ns {
 class Interface {
  public:
   explicit Interface(const std::string& name);  //  why explicit? Go figure!
-  tcp_ip_errors Connect(int link_id);           // Todo After StatusOr
+  void SetOwningNode(Node* node);
+  void SetConnectedLink(Link* link);
+  Node* OwningNode();
+  Link* OwningLink();
+
  private:
   std::string name_{""};
-  bool connected_{false};
-  int link_id{-1};
+  Node* owning_node_{nullptr};
+  Link* connected_link_{nullptr};
 };
 }  // namespace graph_ns
 #endif  // CPP_INCLUDE_GRAPH_INTERFACE_H_
