@@ -13,4 +13,7 @@ include_directories("${PROJECT_SOURCE_DIR}/include/")
 include_directories("${PROJECT_SOURCE_DIR}/src/")
 include_directories("${PROJECT_SOURCE_DIR}/external/spdlog/include/")
 
+
+add_subdirectory("src/graph")
+
 #add_executable(main src/server/main.cpp)

@@ -12,8 +12,8 @@ class Interface {
   explicit Interface(const std::string& name);  //  why explicit? Go figure!
   void SetOwningNode(Node* node);
   void SetConnectedLink(Link* link);
-  Node* OwningNode();
-  Link* OwningLink();
+  // Node* OwningNode();
+  // Link* OwningLink();
 
  private:
   std::string name_{""};
