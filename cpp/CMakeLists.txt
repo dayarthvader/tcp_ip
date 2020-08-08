@@ -12,8 +12,9 @@ find_package(gtest)
 include_directories("${PROJECT_SOURCE_DIR}/include/")
 include_directories("${PROJECT_SOURCE_DIR}/src/")
 include_directories("${PROJECT_SOURCE_DIR}/external/spdlog/include/")
+include_directories("${PROJECT_SOURCE_DIR}/external/googletest/googletest/include")
 
 
 add_subdirectory("src/graph")
-
-#add_executable(main src/server/main.cpp)
+add_subdirectory("test")
+add_executable(main src/main/main.cpp)

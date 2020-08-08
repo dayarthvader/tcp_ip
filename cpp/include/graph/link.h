@@ -11,15 +11,17 @@ class Interface;
 namespace graph_ns {
 class Link {
  public:
-  Link(Interface* interfaces_1, Interface* interfaces_2, uint32_t cost);
-  TcpIpError Connect(Interface* interfaces_1, Interface interfaces_2);
+  explicit Link(uint32_t cost) : cost_(cost) {}
+  void Connect(Interface* interfaces_1, Interface* interfaces_2) {
+    interfaces_1_ = interfaces_1;
+    interfaces_2_ = interfaces_2;
+  }
+  uint32_t Cost() { return cost_; }
 
  private:
-  void SetInterface1(Interface* interfaces_1);
-  void SetInterface2(Interface* interfaces_2);
+  uint32_t cost_{0};
   Interface* interfaces_1_{nullptr};
   Interface* interfaces_2_{nullptr};
-  uint32_t cost_{0};
   };
   }     // namespace graph_ns
 #endif  //  CPP_INCLUDE_GRAPH_LINK_H_
